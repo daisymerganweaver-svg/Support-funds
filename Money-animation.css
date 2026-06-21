@@ -1,0 +1,46 @@
+.money-rain {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 90px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.money-rain span {
+  position: absolute;
+  top: -30px;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 12px rgba(255,255,255,0.35);
+  animation: fall 7s linear infinite;
+}
+
+.money-rain span:nth-child(1) { left: 5%; animation-delay: 0s; }
+.money-rain span:nth-child(2) { left: 12%; animation-delay: 1s; }
+.money-rain span:nth-child(3) { left: 20%; animation-delay: 2s; }
+.money-rain span:nth-child(4) { left: 28%; animation-delay: 0.7s; }
+.money-rain span:nth-child(5) { left: 36%; animation-delay: 1.5s; }
+.money-rain span:nth-child(6) { left: 44%; animation-delay: 2.2s; }
+.money-rain span:nth-child(7) { left: 52%; animation-delay: 0.3s; }
+.money-rain span:nth-child(8) { left: 60%; animation-delay: 1.2s; }
+.money-rain span:nth-child(9) { left: 68%; animation-delay: 2.7s; }
+.money-rain span:nth-child(10) { left: 76%; animation-delay: 0.9s; }
+.money-rain span:nth-child(11) { left: 84%; animation-delay: 1.8s; }
+.money-rain span:nth-child(12) { left: 92%; animation-delay: 2.4s; }
+.money-rain span:nth-child(13) { left: 97%; animation-delay: 0.5s; }
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+    }

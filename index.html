@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pioneer Support Funds</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="money-animation.css" />
+</head>
+<body>
+  <div class="money-rain" aria-hidden="true">
+    <span>$</span><span>₵</span><span>€</span><span>£</span><span>$</span><span>₦</span><span>¥</span>
+    <span>$</span><span>₵</span><span>€</span><span>£</span><span>$</span><span>₦</span><span>¥</span>
+  </div>
+
+  <main class="page">
+    <section class="hero card">
+      <p class="badge">PIONEER SUPPORT FUNDS</p>
+      <h1>Empowering every individual in Africa.</h1>
+      <p class="subtitle">
+        Complete the form below to submit your application for review.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <form id="multiStepForm">
+        <div class="step active">
+          <label>Select Country</label>
+          <select required>
+            <option value="">-- Select Country --</option>
+            <option>ETHIOPIA</option>
+            <option>UGANDA</option>
+            <option>ZAMBIA</option>
+            <option>SOUTH SUDAN</option>
+            <option>CAMEROON</option>
+            <option>KENYA</option>
+            <option>TANZANIA</option>
+            <option>CONGO</option>
+          </select>
+
+          <button type="button" class="next-btn">Next / Endelea</button>
+        </div>
+
+        <div class="step">
+          <p class="question">
+            📌 Greetings, thank you for contacting Pioneer Support Funds. Our mission is to review applications and connect eligible individuals with support opportunities. Are you ready to proceed with a few brief questions regarding your application?
+          </p>
+          <div class="choices">
+            <label><input type="radio" name="ready" /> Yes</label>
+            <label><input type="radio" name="ready" /> No</label>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <p class="question">📌 Where did you hear about Pioneer Support Funds?</p>
+          <div class="choices">
+            <label><input type="radio" name="source" /> PERSONAL RECOMMENDATION</label>
+            <label><input type="radio" name="source" /> SOCIAL NETWORK</label>
+            <label><input type="radio" name="source" /> BROADCASTING OF NEWS</label>
+            <label><input type="radio" name="source" /> OTHER</label>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <p class="question">📌 Is it your first time participating in this program?</p>
+          <div class="choices">
+            <label><input type="radio" name="firstTime" /> Yes</label>
+            <label><input type="radio" name="firstTime" /> No</label>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <p class="question">📌 What do you intend to use the support for?</p>
+          <div class="choices">
+            <label><input type="radio" name="purpose" /> INVESTMENT</label>
+            <label><input type="radio" name="purpose" /> COVER EMERGENCY EXPENSES</label>
+            <label><input type="radio" name="purpose" /> CONSOLIDATE DEBT</label>
+            <label><input type="radio" name="purpose" /> SCHOOL FEES</label>
+            <label><input type="radio" name="purpose" /> BUSINESS</label>
+            <label><input type="radio" name="purpose" /> OTHER</label>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <label>What is your occupation?</label>
+          <select required>
+            <option value="">-- Select Occupation --</option>
+            <option>Student</option>
+            <option>Employed</option>
+            <option>Self-employed</option>
+            <option>Unemployed</option>
+            <option>Business owner</option>
+            <option>Other</option>
+          </select>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <p class="question">📌 Thanks for your answers. Please verify your details:</p>
+          <input type="text" placeholder="Full Name / Jina Kamili" />
+          <input type="number" placeholder="Age / Umri" />
+          <input type="tel" placeholder="Phone Number / Nambari ya Simu" />
+          <input type="email" placeholder="Email Address / Barua Pepe" />
+          <input type="text" placeholder="ID Number / Nambari ya kitambulisho" />
+          <input type="text" placeholder="Who referred you? (Optional)" />
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <p class="question">🎊 Thank you for choosing Pioneer Support Funds. Select your choice:</p>
+          <div class="choices">
+            <label><input type="radio" name="limit" /> KSH 10,000</label>
+            <label><input type="radio" name="limit" /> KSH 25,000</label>
+            <label><input type="radio" name="limit" /> KSH 50,000</label>
+            <label><input type="radio" name="limit" /> KSH 100,000</label>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <p class="question">
+            ☑️ Your application will now be checked. Please confirm you are ready to continue.
+          </p>
+          <div class="choices">
+            <label><input type="radio" name="continue" /> READY</label>
+            <label><input type="radio" name="continue" /> NOT READY</label>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step">
+          <p class="question">☑️ Which line are you using for contact?</p>
+          <div class="choices">
+            <label><input type="radio" name="payment" /> 📌 M-PESA</label>
+            <label><input type="radio" name="payment" /> 📌 Airtel Money</label>
+            <label><input type="radio" name="payment" /> 📌 T-Kash</label>
+            <label><input type="radio" name="payment" /> 📌 Other</label>
+          </div>
+
+          <a class="whatsapp-btn" id="whatsappBtn" href="#" target="_blank" rel="noopener">
+            Submit &amp; Continue to WhatsApp
+          </a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  </html>
